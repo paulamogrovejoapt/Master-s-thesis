@@ -272,13 +272,3 @@ files.download(csv_path)
 files.download('segmentation_result.png')
 files.download(mask_path)
 print('✅ Done — check your Downloads folder')
-
-# =============================================================================
-# TIPS FOR IMPROVING SEGMENTATION (go back to Step 5 to adjust)
-# -----------------------------------------------------------------------------
-# Too many small fragments detected  → increase diameter (e.g. 40)
-# Large cells are split in two       → decrease flow_threshold (e.g. 0.3)
-# Cells in the stele are missed      → decrease diameter (e.g. 20)
-# Too many false positives           → increase cellprob_threshold (e.g. 0.5)
-# Model 'cyto3' is recommended for plant cells; try 'cyto2' as an alternative.
-# =============================================================================
